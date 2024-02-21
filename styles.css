@@ -1,0 +1,165 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+    background-color: white; /* Fondo blanco para el body */
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Añade transición para un cambio suave */
+}
+
+/* Inicio Menu */
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img {
+    width: 90px; /* Ajusta el tamaño del logo según tu necesidad */
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav ul {
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* Texto en blanco */
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+nav a[href="#contacto"] {
+    color: cyan; /* Color morado para el enlace de "Contacto" */
+}
+
+nav a:hover {
+    color: darkcyan;
+    
+}
+
+.menu-toggle {
+    display: none; /* Oculta la barra de menú en pantallas grandes */
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Fin Menu */
+
+.titulo-texturizado {
+  font-size: 48px; /* Tamaño del texto */
+  color: transparent;
+  background: url('Imagenes/degradado.PNG'); /* Ruta a la imagen de la textura */
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: 'Arial', sans-serif; /* Cambia a la fuente deseada */
+    text-align: center
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    box-shadow: 2px 2px 3px #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-float i {
+    margin-top: 5px;
+}
+
+
+/* Inicio Portada */
+.background-section {
+    height: 100%;
+    background: black;
+    background-size: cover;
+    background-position: top;
+    position: relative; /* Para posicionar los elementos internos de forma absoluta */
+    overflow: hidden; /* Oculta los círculos que se salgan de la sección */
+}
+
+
+
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Asegura que el texto esté sobre los círculos */
+    text-align: center;
+}
+
+.slogan {
+    font-size: 48px;
+    color: white; /* Color del texto */
+    text-align: center;
+}
+
+.cambio {
+    font-size: 48px;
+    color: palevioletred;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid palevioletred;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: palevioletred }
+}
+
+/* Fin Portada */
